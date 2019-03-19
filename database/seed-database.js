@@ -2,7 +2,6 @@ const fakeData = require('./generate_fake_data.js');
 const db = require('./index.js');
 
 async function seedDatabase() {
-
   await db.House.sync({ force: true }).then(() => {
     return fakeData.fakeHouseData.forEach(row => {
       db.House.create(row);

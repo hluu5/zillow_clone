@@ -21,7 +21,9 @@ class App extends React.Component {
 
   componentDidMount() {
     let id = window.location.pathname.split('/')[1]; //revise
+    console.log('pathname',window.location.pathname);
     $.get(`http://localhost:3001/houses/${id}`, (data) => {
+
       let house = data[0];
       this.setState({
         house: {
@@ -41,6 +43,7 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
       <div id='houseSummary'>
         <div id='addressPrice'>
