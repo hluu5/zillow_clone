@@ -20,7 +20,7 @@
     "babel-loader": "^8.0.5",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "jquery": "^3.3.1",
     "knex": "^0.16.3",
